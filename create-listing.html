@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <title>Create listing | Artcellar</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">A</a>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="login.html">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="register.html">Register</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-disabled="true" href="profile.html"
+                  >Profile</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <nav class="navbar d-none d-sm-block navbar-expand bg-body-tertiary">
+        <div class="d-flex">
+          <img src="images/teacher-2816112.jpg" alt="" style="width: 3rem" />
+          <a href="profile.html">Josephineee97</a>
+        </div>
+      </nav>
+      <nav class="navbar fixed-bottom navbar-expand bg-body-tertiary">
+        <div class="d-flex d-sm-none">
+          <img src="images/teacher-2816112.jpg" alt="" style="width: 3rem" />
+          <a href="profile.html">Josephineee97</a>
+        </div>
+      </nav>
+   
+    <h1>Create listing</h1>
+    <div class="container">
+      <div class="row d-flex justify-content-center">
+        <form class="col-md-8 col-lg-6">
+          <div class="mb-3">
+            <label for="exampleInputTitle" class="form-label">Title</label>
+            <input
+              type="title??"
+              class="form-control"
+              id="exampleInputTitle"
+              aria-describedby="titleHelp"
+            />
+            <div id="bidHelp" class="form-text">information</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputDeadline" class="form-label"
+              >Deadline</label
+            >
+            <input
+              type="date??"
+              class="form-control"
+              id="exampleInputDeadline"
+              aria-describedby="deadlineHelp"
+            />
+            <div id="deadlineHelp" class="form-text">information</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputMedia" class="form-label">Media</label>
+            <input
+              type="link??"
+              class="form-control"
+              id="exampleInputMedia"
+              aria-describedby="mediaHelp"
+            />
+            <div id="mediaHelp" class="form-text">information</div>
+          </div>
+
+          <div class="mb-3">
+            <label for="exampleInputDescription" class="form-label"
+              >Description</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="exampleInputDescription"
+            />
+            <div id="descriptionHelp" class="form-text">information</div>
+          </div>
+          <button type="submit" class="btn btn-primary">
+            Publish My Listing
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
