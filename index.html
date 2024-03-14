@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <script type="module" src="js/listings.mjs"></script>
+    <script type="module" src="js/search.js"></script>
     <link
       rel="stylesheet"
       href="node_modules/bootstrap/dist/css/bootstrap.min.css"
@@ -13,22 +15,22 @@
   <body>
     <nav class="navbar navbar-expand bg-body-tertiary">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">A</a>
+        <a class="navbar-brand" href="index.html">A</a>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="login.html">Login</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="register.html">Register</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-disabled="true" href="profile.html"
-                >Profile</a
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
               >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./html/login.html">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="html/register.html">Register</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="html/profile.html">Profile</a>
             </li>
           </ul>
         </div>
@@ -38,31 +40,63 @@
     <nav class="navbar navbar-expand bg-body-tertiary">
       <div class="container-fluid">
         <div class="d-flex d-none d-sm-block">
-          <img src="images/teacher-2816112.jpg" alt="" style="width: 3rem" />
-          <a href="profile.html">Josephineee97</a>
+          <img
+            src="images/teacher-2816112-profil-avatar-placeholder.jpg"
+            class="rounded-circle"
+            alt=""
+            style="width: 3rem"
+          />
+          <a href="html/profile.html">Josephineee97</a>
         </div>
         <form class="d-flex" role="search">
           <input
             class="form-control me-2"
             type="search"
-            placeholder="Search"
+            placeholder="Search Listings"
             aria-label="Search"
           />
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
+<!--           <button class="btn btn-outline-success search-button" type="submit">Search</button>
+ -->        </form>
       </div>
     </nav>
     <nav class="navbar fixed-bottom navbar-expand bg-body-tertiary">
       <div class="container-fluid">
         <div class="d-flex d-sm-none">
-          <img src="images/teacher-2816112.jpg" alt="" style="width: 3rem" />
-          <a href="profile.html">Josephineee97</a>
+          <img
+            src="images/teacher-2816112-profil-avatar-placeholder.jpg"
+            class="rounded-circle"
+            alt=""
+            style="width: 3rem"
+          />
+          <a href="html/profile.html">Josephineee97</a>
         </div>
       </div>
     </nav>
 
     <h1>Artcellar</h1>
     <p>an online auction site</p>
+
+
+  <h2>Search results</h2>
+    <div class="container">
+      <div class="row d-flex justify-content-center searched-listings-container">
+      
+     <!--    <div class="listings-container"> -->
+
+
+        </div>
+      </div>
+    </div>
+
+    <h2>Recent listings</h2>
+    <div class="container">
+      <div class="row d-flex justify-content-center listings-container">
+     <!--    <div class="listings-container"> -->
+
+
+        </div>
+      </div>
+    </div>
 
     <div class="container">
       <div class="row d-flex justify-content-center">
@@ -87,7 +121,7 @@
             <li class="list-group-item">Deadline: 08th aug 20024</li>
           </ul>
           <div class="card-body">
-            <a href="listing.html" class="card-link">open</a>
+            <a href="html/listing.html" class="card-link">open</a>
           </div>
         </div>
 
