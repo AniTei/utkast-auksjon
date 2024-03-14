@@ -23,12 +23,11 @@ input.onkeyup = function harvestValue(event) {
 
   console.log("input:", input.value);
 
-  const criterium = input.value;
+  const criterium = input.value.toLowerCase();
   console.log("criterium:", criterium);
 
   filterListings(criterium);
 
-  searchTitle.style.display = "block";
 };
 
 async function filterListings(kriterium) {
@@ -40,7 +39,7 @@ async function filterListings(kriterium) {
 
   // make new array from data gotten
   const filteredListings = listings.data.filter(function (listing) {
-    if (listing.title.startsWith(kriterium)) {
+    if (listing.title.toLowerCase().startsWith(kriterium)) {
       return true;
     }
   });
