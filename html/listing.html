@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="../js/listing.mjs"></script>
     <link
       rel="stylesheet"
       href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
@@ -51,11 +52,16 @@
 
     <div class="container">
 
-      <div class="row">
+
+      <div class="row mb-5 listing-container">
+        
+      </div>
+
+      <div class="row mb-5">
         <!-- <div class="card " style="width:"> -->
         <div class="card d-flex justify-content-center">
           <img
-            src="images/marius-girard-_8zO0LaCxRQ-unsplash.jpg"
+            src="../images/marius-girard-_8zO0LaCxRQ-unsplash.jpg"
             class="card-img-top"
             alt="..."
           />
@@ -73,9 +79,11 @@
         </div>
       </div>
 
-      <div class="row d-flex justify-content-center">
+      <div class="row mb-5 d-flex justify-content-center">
+                 <h2>Make a bid</h2>
+
+       
         <form class="col-md-8 col-lg-6 ">
-          <h2>Make a bid</h2>
           <div class="mb-3">
             <label for="exampleInputBid" class="form-label">Your bid</label>
             <input
@@ -102,7 +110,7 @@
         </form>
       </div>
 
-      <div class="row d-flex justify-content-center">
+      <div class="row mb-5 d-flex justify-content-center">
         <h2>Current bids:</h2>
 
         <ol class="list-group list-group-numbered col-md-8 col-lg-6">
