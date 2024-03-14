@@ -2,7 +2,8 @@ export const baseURL = "https://v2.api.noroff.dev";
 
 export const allListings = "/auction/listings/"
 
-export const id = "/<id>"
+export const bids = "?_bids=true";
+
 
 // id has to be built with the querystinrg 
 
@@ -13,7 +14,7 @@ export const id = "/<id>"
 
 
 
-/* console.log (url);
- */
+const seller = "?_seller=true"
+// https://v2.api.noroff.dev/auction/listings?_seller=true
 
 
