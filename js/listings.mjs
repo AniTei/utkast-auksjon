@@ -18,6 +18,9 @@ const url = baseURL + allListings + limit;
 
 console.log("url:" , url)
 
+// når jeg trykker opdaterknappen blir listings content borte
+
+
 // https://docs.noroff.dev/docs/v2/pagination-sorting
 
 
