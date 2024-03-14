@@ -10,10 +10,13 @@ import { allListings } from "./endpoints.mjs";
 import { getData } from "./getData.mjs";
 const url = baseURL + allListings;
 
-const input = document.querySelector("input");
-const SearchedListingsContainer = document.querySelector(".searched-listings-container");
 
-SearchedListingsContainer.innerHTML = `<p>hei</p>`;
+const input = document.querySelector("input");
+const listingsContainer = document.querySelector(
+  ".listings-container"
+);
+
+listingsContainer.innerHTML = `<p>hei</p>`;
 
 input.onkeyup = function harvestValue(event) {
   event.preventDefault();
@@ -24,10 +27,11 @@ input.onkeyup = function harvestValue(event) {
   console.log("criterium:", criterium);
 
   filterListings(criterium);
+
+  searchTitle.style.display = "block";
 };
 
 async function filterListings(kriterium) {
-
   console.log("Kriterium:", kriterium);
 
   const listings = await getData(url);
@@ -48,14 +52,17 @@ async function filterListings(kriterium) {
 
 filterListings();
 
+const searchTitle = document.querySelector(".search-title");
+
 async function displayData(value) {
   try {
     console.log("filteredListings in dispay function:", value);
-    SearchedListingsContainer.innerHTML = "";
+
+    listingsContainer.innerHTML = "";
 
     //loop throug data, and display, find way wo/ innerHTML
     for (let i = 0; i < value.length; i++) {
-      SearchedListingsContainer.innerHTML += `<div
+      listingsContainer.innerHTML += `<div
           class="card m-3 card col-12 col-sm-6 col-lg-4"
           style="width: 18rem">
           <img
@@ -80,20 +87,15 @@ async function displayData(value) {
   } catch {}
 }
 
-/* 
 
-   //get the data
-   getData(url);
-   // filter it
-   method?
-   //display it
-    displayData() 
+
 
 // bruke dataene fra get data, filter the array, criterium: input in search
 
-// se på hva du gjorde i js2 ca
+// se på hva du gjorde i js2 ca?
 
-/* get data, filter it on criterium */
+
+// det er noe rart med antallet i array
 
 // https://content.noroff.dev/javascript-1/single-api-results.html
 
