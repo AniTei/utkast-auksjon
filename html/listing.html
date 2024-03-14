@@ -10,56 +10,52 @@
     />
     <title>Listing | Artcellar</title>
   </head>
-  <body>  
+  <body>
     <nav class="navbar navbar-expand bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="../index.html">A</a>
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="../index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="login.html">Login</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="register.html">Register</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-disabled="true" href="profile.html"
-                  >Profile</a
-                >
-              </li>
-            </ul>
-          </div>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">A</a>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="register.html">Register</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-disabled="true" href="profile.html"
+                >Profile</a
+              >
+            </li>
+          </ul>
         </div>
-      </nav>
+      </div>
+    </nav>
 
-      <nav class="navbar d-none d-sm-block navbar-expand bg-body-tertiary">
-        <div class="d-flex">
-          <img src="../images/teacher-2816112.jpg" alt="" style="width: 3rem" />
-          <a href="profile.html">Josephineee97</a>
-        </div>
-      </nav>
-      <nav class="navbar fixed-bottom navbar-expand bg-body-tertiary">
-        <div class="d-flex d-sm-none">
-          <img src="../images/teacher-2816112.jpg" alt="" style="width: 3rem" />
-          <a href="profile.html">Josephineee97</a>
-        </div>
-      </nav>
+    <nav class="navbar d-none d-sm-block navbar-expand bg-body-tertiary">
+      <div class="d-flex">
+        <img src="../images/teacher-2816112.jpg" alt="" style="width: 3rem" />
+        <a href="profile.html">Josephineee97</a>
+      </div>
+    </nav>
+    <nav class="navbar fixed-bottom navbar-expand bg-body-tertiary">
+      <div class="d-flex d-sm-none">
+        <img src="../images/teacher-2816112.jpg" alt="" style="width: 3rem" />
+        <a href="profile.html">Josephineee97</a>
+      </div>
+    </nav>
 
     <h1>A specific listing / title / Arrows and column</h1>
 
     <div class="container">
-
-
-      <div class="row mb-5 listing-container">
-        
-      </div>
+      <div class="row mb-5 listing-container"></div>
 
       <div class="row mb-5">
         <!-- <div class="card " style="width:"> -->
-        <div class="card d-flex justify-content-center">
+        <div class="card d-flex justify-content-center" style="width: 28rem">
           <img
             src="../images/marius-girard-_8zO0LaCxRQ-unsplash.jpg"
             class="card-img-top"
@@ -80,10 +76,9 @@
       </div>
 
       <div class="row mb-5 d-flex justify-content-center">
-                 <h2>Make a bid</h2>
+        <h2>Make a bid</h2>
 
-       
-        <form class="col-md-8 col-lg-6 ">
+        <form class="col-md-8 col-lg-6">
           <div class="mb-3">
             <label for="exampleInputBid" class="form-label">Your bid</label>
             <input
@@ -111,37 +106,48 @@
       </div>
 
       <div class="row mb-5 d-flex justify-content-center">
-        <h2>Current bids:</h2>
+        <h2>Recent bids:</h2>
+        <div class="">
 
-        <ol class="list-group list-group-numbered col-md-8 col-lg-6">
-          <li
-            class="list-group-item d-flex justify-content-between align-items-start"
-          >
-            <div class="ms-2 me-auto">
-              <div class="fw-bold">user123</div>
-              Content for list item
-            </div>
-            <span class="badge text-bg-primary rounded-pill">1234 nok</span>
-          </li>
-          <li
-            class="list-group-item d-flex justify-content-between align-items-start"
-          >
-            <div class="ms-2 me-auto">
-              <div class="fw-bold">Josephineee97</div>
-              Content for list item
-            </div>
-            <span class="badge text-bg-primary rounded-pill">1000 nok</span>
-          </li>
-          <li
-            class="list-group-item d-flex justify-content-between align-items-start"
-          >
-            <div class="ms-2 me-auto">
-              <div class="fw-bold">hello_marshmellow</div>
-              Content for list item
-            </div>
-            <span class="badge text-bg-primary rounded-pill">687 nok</span>
-          </li>
+          <ol class="bids-container list-group list-group-numbered col-md-8 col-lg-6">
+
+          
+          <p>No bids yet :(</p>
         </ol>
+        </div>
+      
+
+        <div class="bids-example">
+          <ol class="list-group list-group-numbered col-md-8 col-lg-6">
+            <li
+              class="list-group-item d-flex justify-content-between align-items-start"
+            >
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">user123</div>
+                Content for list item
+              </div>
+              <span class="badge text-bg-primary rounded-pill">1234 nok</span>
+            </li>
+            <li
+              class="list-group-item d-flex justify-content-between align-items-start"
+            >
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">Josephineee97</div>
+                Content for list item
+              </div>
+              <span class="badge text-bg-primary rounded-pill">1000 nok</span>
+            </li>
+            <li
+              class="list-group-item d-flex justify-content-between align-items-start"
+            >
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">hello_marshmellow</div>
+                Content for list item
+              </div>
+              <span class="badge text-bg-primary rounded-pill">687 nok</span>
+            </li>
+          </ol>
+        </div>
       </div>
     </div>
   </body>
